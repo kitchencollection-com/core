@@ -6,7 +6,9 @@ bin/magento maintenance:enable
 composer require kitchencollection.com/core:*
 bin/magento setup:upgrade
 rm -rf var/di var/generation generated/code && bin/magento setup:di:compile
-rm -rf pub/static/* && bin/magento setup:static-content:deploy en_US
+rm -rf pub/static/*
+bin/magento setup:static-content:deploy en_US --area adminhtml --theme Magento/backend
+bin/magento setup:static-content:deploy en_US --area frontend --theme Codazon/fastest_food_drink
 bin/magento maintenance:disable
 ```
 
@@ -16,7 +18,9 @@ bin/magento maintenance:enable
 composer update kitchencollection.com/core
 bin/magento setup:upgrade
 rm -rf var/di var/generation generated/code && bin/magento setup:di:compile
-rm -rf pub/static/* && bin/magento setup:static-content:deploy en_US
+rm -rf pub/static/*
+bin/magento setup:static-content:deploy en_US --area adminhtml --theme Magento/backend
+bin/magento setup:static-content:deploy en_US --area frontend --theme Codazon/fastest_food_drink
 bin/magento maintenance:disable
 ```
 
