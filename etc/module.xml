@@ -5,7 +5,7 @@
 >
 	<module name='KitchenCollection_Core' setup_version='0.0.1'>
 		<sequence>
-			<module name='Magento_Theme'/>
+			<module name='Codazon_ThemeOptions'/>
 		</sequence>
 	</module>
 </config>
