@@ -15,6 +15,7 @@ bin/magento maintenance:disable
 ## How to upgrade
 ```
 bin/magento maintenance:enable
+composer clear-cache
 composer update kitchencollection.com/core
 bin/magento setup:upgrade
 rm -rf var/di var/generation generated/code && bin/magento setup:di:compile
