@@ -1,0 +1,17 @@
+.cms-home, .page-products {
+	// 2018-10-03
+	// "An ADA issue: «6. Content not read correctly by screen reader»":
+	// https://github.com/kitchencollection-com/core/issues/2
+	.product-item .old-price .price-label {
+		// 2018-10-03 I applied the same style as for «Special Price»
+		border: 0;
+		clip: rect(0, 0, 0, 0);
+		display: inline;
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+	}
+}
