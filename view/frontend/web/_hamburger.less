@@ -1,0 +1,10 @@
+// 2018-10-04
+// "An ADA issue: the «Hamburger» icon is not visible when browser is zoomed to 200%":
+// https://github.com/kitchencollection-com/core/issues/12
+@media (min-width: 768px) and (max-width: 992px) {
+	.left-navigation .navigation .menu-title:after {display: inline-block !important;}
+}
+@media (min-width: 768px) and (max-width: 800px) {
+	.left-navigation .navigation .menu-title {padding-left: 10px !important; padding-right: 10px !important;}
+	&:after {margin-top: 2px !important;}
+}

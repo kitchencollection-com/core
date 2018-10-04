@@ -1,0 +1,9 @@
+// 2018-10-03
+// "An ADA issue: the «MY CART» title in the top-right corner has an insufficient color contrast":
+// https://github.com/kitchencollection-com/core/issues/6
+@kk-color-minicart: #468412;
+.page-header .header .minicart-wrapper .action.showcart {
+	&::before {background-color: @kk-color-minicart;}
+	.price-label span {color: @kk-color-minicart !important;}
+	.text {color: @kk-color-minicart !important;}
+}

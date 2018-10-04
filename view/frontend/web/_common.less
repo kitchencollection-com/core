@@ -1,43 +1,4 @@
 // 2018-10-03
-// "An ADA issue: «3. HTML used to format content»":
-// https://github.com/kitchencollection-com/core/issues/1
-.kk-verisign {
-	color: #000000 !important;
-	font: bold 7px verdana,sans-serif;
-	letter-spacing: .5px;
-	margin: 0px;
-	padding: 0px;
-	text-align: center;
-	text-decoration: none;
-}
-// 2018-10-03
-// "An ADA issue: the «MY CART» title in the top-right corner has an insufficient color contrast":
-// https://github.com/kitchencollection-com/core/issues/6
-@kk-color-minicart: #468412;
-.page-header .header .minicart-wrapper .action.showcart {
-	&::before {background-color: @kk-color-minicart;}
-	.price-label span {color: @kk-color-minicart !important;}
-	.text {color: @kk-color-minicart !important;}
-}
-// 2018-10-03
-// "An ADA issue: the clearance prices (red) have an insufficient color contrast":
-// https://github.com/kitchencollection-com/core/issues/7
-@kk-color-price: #de0101;
-.catalog-product-view .product-info-price .price-final_price .price-container
-	.price-wrapper.sale-clearance-price .price {color: @kk-color-price !important;}
-.product-item .price-box .price-wrapper.sale-clearance-price .price {color: @kk-color-price !important;}
-.price-box .clearance-label {color: @kk-color-price !important;}
-// 2018-10-03
 // "An ADA issue: «Headers of footer columns have an insufficient color contrast»":
 // https://github.com/kitchencollection-com/core/issues/8
 .page-footer p.h5 {color: #6d6d6d !important;}
-// 2018-10-04
-// "An ADA issue: the «Hamburger» icon is not visible when browser is zoomed to 200%":
-// https://github.com/kitchencollection-com/core/issues/12
-@media (min-width: 768px) and (max-width: 992px) {
-	.left-navigation .navigation .menu-title:after {display: inline-block !important;}
-}
-@media (min-width: 768px) and (max-width: 800px) {
-	.left-navigation .navigation .menu-title {padding-left: 10px !important; padding-right: 10px !important;}
-	&:after {margin-top: 2px !important;}
-}

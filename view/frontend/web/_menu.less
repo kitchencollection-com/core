@@ -1,0 +1,17 @@
+// 2018-10-04
+// "An ADA issue: the main menu's images are cropped when browser is zoomed to 200%":
+// https://github.com/kitchencollection-com/core/issues/13
+.groupmenu {
+	.small_appliances.groupmenu-drop-content .row div.col-sm-6 {
+		&:nth-child(1) {
+			margin: 10px 0 0 1em !important;
+			padding: 0 0 0 1em !important;
+		}
+		&:nth-child(2) {
+			margin: 10px 0 0 1em !important;
+			padding: 0 0 0 1em !important;
+		}
+	}
+	@media (min-width: 768px), print {.groupmenu-drop-content.groupmenu-width-17 {width: 70rem !important;}}
+	@media (min-width: 1000px), print {.groupmenu-drop-content.groupmenu-width-17 {width: 75rem !important;}}
+}
