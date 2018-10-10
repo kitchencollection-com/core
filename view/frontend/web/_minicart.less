@@ -7,3 +7,14 @@
 	.price-label span {color: @kk-color-minicart !important;}
 	.text {color: @kk-color-minicart !important;}
 }
+// 2018-10-10
+// "An ADA issue: «14. “Search” placeholder is getting overlapped with Cart icon
+// when the browser is zoomed to 200%. This makes the cart icon inaccessible to the user.»":
+// https://github.com/kitchencollection-com/core/issues/16
+@media (min-width: 768px) {
+	.header-wrapper-center {margin-left: 0 !important; margin-top: 11px; padding: 0 !important;}
+	.col-sm-6.col-md-7 .minicart-wrapper {float: none; position: static;}
+}
+@media only screen and (min-width: 1300px) {
+	.page-header .header-wrapper-right > .minicart-wrapper {top: 27px !important;}
+}
