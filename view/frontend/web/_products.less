@@ -14,4 +14,11 @@
 		position: absolute;
 		width: 1px;
 	}
+	// 2018-10-10
+	// "An ADA issue: products names are trunctated in product lists on text-only zooming to 200%":
+	// https://github.com/kitchencollection-com/core/issues/15
+	ol.products {
+		display: flex; flex-wrap: wrap;
+		.product-item-info .product.details.product-item-details {height: auto !important; padding-bottom: 0;}
+	}
 }
