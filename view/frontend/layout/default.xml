@@ -3,5 +3,11 @@
 	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
 	xsi:noNamespaceSchemaLocation='urn:magento:framework:View/Layout/etc/page_configuration.xsd'
 >
-	<head><css src='KitchenCollection_Core::main.css'/></head>
+	<head>
+		<css src='KitchenCollection_Core::main.css'/>
+<!-- 2018-10-18
+"An ADA issue: keyboard-only users are unable to navigate to the «SIGN-IN» dropdown button":
+https://github.com/kitchencollection-com/core/issues/17 -->
+		<script src='KitchenCollection_Core::main.js' defer='defer'/>
+	</head>
 </page>
