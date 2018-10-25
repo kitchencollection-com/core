@@ -1,6 +1,6 @@
 {
 	"name": "kitchencollection.com/core"
-	,"version": "0.1.3"
+	,"version": "0.1.4"
 	,"description": "A custom module for kitchencollection.com"
 	,"type": "magento2-module"
 	,"homepage": "https://github.com/kitchencollection-com/core"
