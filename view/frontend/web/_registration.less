@@ -1,0 +1,10 @@
+// 2018-10-25
+// 1) "An ADA issue: the keyboard focus is not visible for a check-box
+// on the frontend customer registration form": https://github.com/kitchencollection-com/core/issues/26
+// 2) "An ADA issue: the keyboard focus is not visible for combo boxes
+// on the frontend customer registration form" https://github.com/kitchencollection-com/core/issues/27
+.field.choice.newsletter {
+	// 2018-10-25 https://css-tricks.com/almanac/selectors/f/focus-within
+	&:focus-within {border: 2px solid #68a8e0;}
+	> input[type='checkbox'] {line-height: 1.42857; margin-top: 0; vertical-align: middle;}
+}
