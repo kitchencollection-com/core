@@ -21,4 +21,11 @@ require(['jquery'], function($) {$(function() {
 			}
 		})
 	;
+	// 2018-10-25
+	// An ADA issue: the control's «reset» state is not announced by the screen reader
+	// when user selects the «Reset» button on the «Store Locator» page:
+	// https://github.com/kitchencollection-com/core/issues/30
+	$('.btn-reset-search-distance').click(function(){
+		$('.slider-range-amount').focus();
+	});
 });});
