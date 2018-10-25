@@ -3,4 +3,15 @@
 // https://github.com/kitchencollection-com/core/issues/23
 // "An ADA issue: the keyboard focus is not visible for the home page's carousel buttons"
 // https://github.com/kitchencollection-com/core/issues/24
-.cdz-slideshow .slider-item > a:focus > img, .owl-dot:focus {box-shadow: 0 0 3px 1px #68a8e0;}
+.cdz-slideshow .owl-carousel {
+	position: static;
+	.slider-item > a:focus > img, .owl-dot:focus {border: 2px solid #68a8e0;}
+	> .owl-controls {
+		margin-top: -15px;
+		.owl-dots {
+			position: static !important;
+			.owl-dot {padding-bottom: 0.4em;}
+		}
+	}
+}
+#maincontent > .container > .row::after {clear: none !important;}
