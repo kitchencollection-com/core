@@ -7,7 +7,7 @@ composer require kitchencollection.com/core:*
 bin/magento setup:upgrade
 rm -rf var/di var/generation generated/code && bin/magento setup:di:compile
 sudo chown -R -v apache . && sudo chgrp -R -v dspangler .
-rm -rf pub/static/* && bin/magento setup:static-content:deploy en_US --area adminhtml --theme Magento/backend && bin/magento setup:static-content:deploy en_US --area frontend --theme Codazon/fastest_food_drinkCodazon/fastest_food_drink
+rm -rf pub/static/* && bin/magento setup:static-content:deploy en_US --area adminhtml --theme Magento/backend && bin/magento setup:static-content:deploy en_US --area frontend --theme Codazon/fastest_food_drink
 sudo service httpd restart
 bin/magento cache:enable
 bin/magento maintenance:disable
@@ -21,7 +21,7 @@ composer update kitchencollection.com/core
 bin/magento setup:upgrade
 rm -rf var/di var/generation generated/code && bin/magento setup:di:compile
 sudo chown -R -v apache . && sudo chgrp -R -v dspangler .
-rm -rf pub/static/* && bin/magento setup:static-content:deploy en_US --area adminhtml --theme Magento/backend && bin/magento setup:static-content:deploy en_US --area frontend --theme Codazon/fastest_food_drinkCodazon/fastest_food_drink
+rm -rf pub/static/* && bin/magento setup:static-content:deploy en_US --area adminhtml --theme Magento/backend && bin/magento setup:static-content:deploy en_US --area frontend --theme Codazon/fastest_food_drink
 sudo service httpd restart
 bin/php bin/magento cache:enable
 bin/magento maintenance:disable
